@@ -31,7 +31,6 @@ La red se divide lógicamente en dos segmentos principales interconectados media
 4.  **red-privada (Docker Interna LAN 2):** Red tipo *bridge* totalmente aislada que comunica los backends con la Base de Datos MySQL (puerto 3306), sin mapeo al host exterior.
 
 ### Políticas del Firewall
-Implementadas a través del script `enrutamiento.sh` mediante **iptables** (política por defecto `FORWARD DROP`):
 * **Windows Server:** Permite salida a Internet y conexión hacia LAN 2 para administrar la base de datos, pero bloquea el tráfico entrante desde Internet.
 * **LAN 2:** Accesible desde el exterior únicamente por redirección de puertos (*Port Forwarding*) en el 80 y 443 hacia el balanceador Nginx. El servidor MySQL carece de *Default Gateway* al exterior para evitar filtraciones.
 
