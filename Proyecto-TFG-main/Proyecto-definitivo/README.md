@@ -56,11 +56,10 @@ Se ha sustituido Apache por **Nginx** por su arquitectura basada en eventos (*ev
 
 ## 6. Respaldos y Continuidad de Negocio
 
-### Estrategia de Copias de Seguridad (Capítulo 11)
+### Estrategia de Copias de Seguridad
 Diseñada para minimizar el RPO (*Recovery Point Objective*):
 * **Elementos respaldados:** Base de datos (vía `mysqldump`), contenidos web estáticos (`./html`), configuraciones del sistema (`docker-compose.yml`, `nginx.conf`, scripts, archivos `.env`) y volúmenes de GLPI y Passbolt.
 * **Frecuencia:** Estrategia mixta con una **Copia Completa semanal** (domingos 00:00) y **Copias Incrementales diarias** (lunes a sábado).
-* **Seguridad de las copias:** Cifrado en reposo mediante **AES-256**, transferencia segura por TLS/SSL a un almacenamiento remoto (*off-site*) inmutable durante 30 días.
 
 ### Alta Disponibilidad y Tolerancia a Fallos
 * **Punto Único de Fallo (SPOF):** La base de datos, al ser de nodo único, es el elemento crítico. Se mitiga con políticas de reinicio automático (`restart: always`) en Docker y respaldos externos robustos.
