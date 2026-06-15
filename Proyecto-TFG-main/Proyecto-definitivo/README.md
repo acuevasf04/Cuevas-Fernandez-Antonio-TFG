@@ -13,7 +13,7 @@ Este proyecto detalla el diseño, despliegue y gestión de una infraestructura i
 ## 2. Descripción General de la Arquitectura
 La red se divide lógicamente en dos segmentos principales interconectados mediante un router con acceso a Internet:
 
-* **LAN 1 (Windows Server + Docker Corporativo):** ** Un servidor Windows Server 2022** provee de forma nativa los servicios de **DNS, DHCP y FTP** para los empleados.
+* **LAN 1 (Windows Server + Docker Corporativo):** **Un servidor Windows Server 2022** provee de forma nativa los servicios de **DNS, DHCP y FTP** para los empleados.
     * La gestión de usuarios en Active Directory se automatiza mediante una **aplicación Python con interfaz gráfica (Tkinter)** que invoca scripts en PowerShell (`crear_usuario.ps1`, etc.).
     * En el mismo host Linux de la LAN 1 se despliegan mediante Docker servicios internos no accesibles desde Internet: **GLPI** (gestión de activos y helpdesk con chatbot de IA integrado vía Ollama), **Passbolt** (gestor corporativo de contraseñas con cifrado OpenPGP en cliente) y un **Proxy Inverso** (`nginx-proxy`) para centralizar el acceso por nombres de dominio locales (`.local`).
 * **LAN 2 (Linux - Aplicación Web / DMZ):**
