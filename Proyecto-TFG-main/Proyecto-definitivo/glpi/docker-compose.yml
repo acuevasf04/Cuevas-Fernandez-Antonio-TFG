@@ -44,21 +44,7 @@ services:
       - ./storage/var/www/html/glpi/files:/var/glpi/files
       - ./storage/var/www/html/glpi/config:/var/glpi/config
       - ./storage/glpi_marketplace:/var/www/glpi/glpi_marketplace
-  glpi-mcp:
-    image: quay.io/karmab/glpic
-    container_name: glpi-mcp
-    restart: always
-    entrypoint: /usr/local/bin/glpimcp 
-    ports:
-      -"8000:8000"
-    environment:
-      - GLPI_URL=http://glpi/apirest.php
-      - GLPI_USER=${GLPI_MCP_USER}
-      - GLPI_TOKEN={GLPI_MCP_TOKEN}
-    depends_on:
-      glpi:
-        condition: service_healthy
-
+      
   ollama:
     image: ollama:ollama
     container_name: ollama
