@@ -1,4 +1,4 @@
-# Resumen Ejecutivo: Proyecto Intermodular de Infraestructura
+# Resumen: Proyecto Intermodular
 **Autor:** Antonio Cuevas Fernández  
 **Fecha:** 31/05/2026  
 **Especialidad:** ASIR 2  
