@@ -1,6 +1,6 @@
 # Resumen: Proyecto Intermodular
 **Autor:** Antonio Cuevas Fernández  
-**Fecha:** 31/05/2026  
+**Fecha:** 15/06/2026  
 **Especialidad:** ASIR 2  
 
 ---
