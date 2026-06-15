@@ -1,4 +1,4 @@
-# 💬 GLPI Chat Widget
+# GLPI Chat Widget
 
 Widget de chat flotante embebible en cualquier página web que conecta a los usuarios con un asistente IA de soporte IT, usando streaming de respuestas en tiempo real.
 
