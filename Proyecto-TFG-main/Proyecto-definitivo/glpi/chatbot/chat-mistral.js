@@ -5,7 +5,7 @@
     endpoint     : "/chat-api/chat",
     apiKey       : "ollama",
     model        : "gemma3:12b",
-    systemPrompt : `Eres un agente de IA de soporte técnico de Inquiba. Tu función es ayudar a los usuarios con dudas relacionadas con el sistema GLPI y los procedimientos de soporte IT de la empresa.
+    systemPrompt : `Eres un agente de IA de soporte técnico de Aromaris. Tu función es ayudar a los usuarios con dudas relacionadas con el sistema GLPI y los procedimientos de soporte IT de la empresa.
 
 PUEDES ayudar con:
 - Consultar información de la base de conocimientos de GLPI
