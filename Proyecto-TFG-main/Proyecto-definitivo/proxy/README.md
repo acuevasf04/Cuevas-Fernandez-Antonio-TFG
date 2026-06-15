@@ -41,7 +41,7 @@ Dado que estamos utilizando **Docker**, el sistema operativo del servidor tiene 
 
 El Proxy Inverso soluciona esto de forma elegante:
 * El Proxy Inverso es **el único** que se adueña de los puertos 80 y 443 del servidor real.
-* Los contenedores de GLPI y Passbolt se configuran en puertos internos expuestos de forma privada (por ejemplo, el puerto 8080 y el 8090).
+* Los contenedores de GLPI y Passbolt se configuran en puertos internos expuestos de forma privada (en este caso, el puerto 8080 y el 8081).
 * El proxy recibe todo en el puerto estándar y lo reparte internamente hacia el puerto específico de cada contenedor sin que el usuario lo note.
 
 ### 2. Enrutamiento por Nombre de Dominio
