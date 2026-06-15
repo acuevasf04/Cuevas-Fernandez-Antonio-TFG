@@ -12,7 +12,6 @@ Aplicación web PHP para la empresa Aromaris (fábrica de jabones artesanales). 
 | `index.php` | Página pública corporativa con formulario de login integrado |
 | `registro.php` | Formulario de registro de nuevos usuarios |
 | `admin.php` | Panel de administración de base de datos (tipo phpMyAdmin ligero) |
-| `hash.php` | Utilidad de un solo uso para crear el primer usuario administrador |
 | `style.css` | Variables de color y utilidades CSS propias de Aromaris |
  
 ---
