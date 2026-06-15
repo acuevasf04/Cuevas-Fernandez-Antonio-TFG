@@ -70,6 +70,6 @@ Diseñada para minimizar el RPO (*Recovery Point Objective*):
 
 ## 7. Monitorización y Mantenimiento
 Se implementa un stack de visibilidad proactiva:
-* **Herramientas:** Uso de `docker stats` y **cAdvisor + Prometheus** para la recolección de métricas históricas de contenedores.
+* **Herramientas:** Uso de `docker stats`.
 * **KPIs supervisados:** Uso de hardware (CPU, RAM, Disco), rendimiento de red (ancho de banda y latencia) y estado de servicios (uptime y volumen de errores HTTP 4xx/5xx).
 * **Parches de seguridad:** Configuración de `unattended-upgrades` en Debian 13 para parches del SO y actualizaciones programadas de contenedores mediante `docker compose pull`.
